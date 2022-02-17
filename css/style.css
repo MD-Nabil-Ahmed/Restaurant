@@ -1,0 +1,743 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1250px;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+:root {
+    --font_fa_gen: 'Gentium Book Basic', serif;
+    --font_fa_yese: 'Yeseva One', cursive;
+    --font_fa_lato: 'Lato', sans-serif;
+    --font_fa_open: 'Open Sans', sans-serif;
+}
+
+.text_center {
+    text-align: center;
+}
+
+/* ======================================================================================================================
+                                                    common css end
+==========================================================================================================================*/
+
+
+
+
+
+
+/* ================top to back button start=============== */
+#bc_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    background: #00e1ff;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    z-index: 99999;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* ================top to back button end=============== */
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+#main_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.fix_menu {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 999 !important;
+}
+
+.menu_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 20%;
+    width: 20%;
+}
+
+.menu {
+    max-width: 80%;
+    width: 80%;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    padding: 0 25px;
+}
+
+.menu ul li a {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: var(--font_fa_gen);
+    color: #fff;
+    line-height: 92px;
+    position: relative;
+}
+
+.menu ul li a::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ece5d1;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.menu ul li a:hover::after {
+    opacity: 1;
+}
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    banner part start
+==========================================================================================================================*/
+#banner {
+    padding: 240px 0 140px;
+}
+
+.banner_text {
+    width: 970px;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.banner_text h1 {
+    font-size: 90px;
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--font_fa_yese);
+    margin-bottom: 30px;
+}
+
+.banner_text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.banner_text a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    padding: 23px 50px;
+    border: 1px solid #fff;
+    margin: 34px 15px 0 15px;
+    transition: all linear .3s;
+}
+
+.banner_text a:hover {
+    background: #2c2d2f;
+    border-color: #1b1907;
+}
+
+/* ======================================================================================================================
+                                                    banner part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    food part start
+==========================================================================================================================*/
+#food {
+    padding: 80px 0 40px;
+}
+
+.food_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.food_col {
+    width: 430px;
+    max-width: 430px;
+}
+
+.food_plate {
+    max-width: 550px;
+    width: 550px;
+}
+
+.food_plate img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.food_col h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--font_fa_yese);
+    color: #cc9900;
+    margin-bottom: 10px;
+}
+
+.food_col p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    color: #4c4c4c;
+    line-height: 24px;
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+
+/* ======================================================================================================================
+                                                    food part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+#banner_2nd {
+    padding: 100px 0;
+}
+
+.banner_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.banner_2nd_text {
+    padding: 80px 70px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.banner_2nd_text {
+    background: #000;
+    opacity: 67%;
+    width: 570px;
+    max-width: 570px;
+    text-align: center;
+}
+
+.banner_2nd_text h3 {
+    color: #fff;
+    font-size: 36px;
+    font-family: var(--font_fa_yese);
+    margin-bottom: 10px;
+}
+
+.banner_2nd_text p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.banner_2nd_text img {
+    margin: 0 10px 0 10px;
+}
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+#menu_card {
+    padding: 100px 0;
+}
+
+.card_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 110px;
+}
+
+.card_col {
+    width: 42%;
+    max-width: 42%;
+}
+
+.card_col h3 {
+    font-size: 36px;
+    font-family: var(--font_fa_yese);
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+
+.card_col .mini_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mini_1 h4 {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: var(--font_fa_yese);
+    color: #cc9900;
+}
+
+.mini_1 span {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: var(--font_fa_yese);
+    color: #cc9900;
+}
+
+.mini_1 p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    color: #4c4c4c;
+    border-top: 1px solid #e3dab6;
+    width: 100%;
+    margin-top: 7px;
+    text-align: left;
+    padding: 10px 0 0;
+}
+
+
+
+
+.col_3rd {
+    margin-top: 60px;
+}
+
+.col_4th {
+    margin-top: -30px;
+}
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    banner_3rd part start
+==========================================================================================================================*/
+#banner_3rd {
+    padding: 100px 0;
+}
+
+.banner_3rd_text {
+    background: rgba(0, 0, 0, 0.80);
+    width: 770px;
+    padding: 80px 70px;
+    margin: 0 auto;
+}
+
+.banner_3rd_text h3 {
+    font-size: 36px;
+    font-family: var(--font_fa_yese);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.banner_3rd_text p {
+    font-size: 25px;
+    font-family: var(--font_fa_gen);
+    font-weight: 700;
+    color: #dde0df;
+    line-height: 45px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.banner_3rd_text span {
+    font-family: var(--font_fa_lato);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ======================================================================================================================
+                                                    banner_3rd part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    buy part start
+==========================================================================================================================*/
+#buy {
+    padding: 100px 0;
+}
+
+.buy_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.buy_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 30px;
+    max-width: 570px;
+    width: 570px;
+}
+
+
+
+.buy_form {
+    width: 430px;
+    max-width: 430px;
+    margin-right: 100px;
+}
+
+.buy_text h3 {
+    font-size: 36px;
+    font-family: var(--font_fa_yese);
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+
+.buy_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    color: #4c4c4c;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+.buy_text span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_fa_lato);
+    color: #4c4c4c;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form {
+    margin-top: 35px;
+}
+
+.form form ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form form ul li {
+    margin-bottom: 25px;
+}
+
+.form form ul li label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font_fa_open);
+    color: #c9a131;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form form ul li input {
+    padding: 12px 12px;
+    width: 200px;
+    border-color: #c8c6c6;
+    background: transparent;
+    transition: all linear .3s;
+}
+
+.form form ul li select {
+    padding: 12px 12px;
+    width: 200px;
+    border-color: #c8c6c6;
+    background: transparent;
+    transition: all linear .3s;
+}
+
+.form form ul li select:hover {
+    border-color: #c9a131;
+}
+
+.form form ul li input:hover {
+    border-color: #c9a131;
+}
+
+.form form button {
+    padding: 12px 60px;
+    background: #c9a131;
+    border-color: transparent;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* ======================================================================================================================
+                                                    buy part end
+==========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================================
+                                                    footer part start
+==========================================================================================================================*/
+#footer {
+    padding: 60px 0 70px;
+    background: #191919;
+}
+
+
+.foot_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 110px 0 0;
+}
+
+.foot_col_1 {
+    max-width: 370px;
+    width: 370px;
+}
+
+.foot_col_1 h5 {
+    font-size: 21px;
+    font-family: var(--font_fa_yese);
+    color: #fefefe;
+    margin-bottom: 15px;
+}
+
+.foot_col_1 p {
+    font-size: 16px;
+    font-family: var(--font_fa_open);
+    color: #fff;
+    font-weight: 400;
+    margin-top: 18px;
+    line-height: 24px;
+}
+
+.foot_col_1 span {
+    font-size: 16px;
+    font-family: var(--font_fa_open);
+    color: #fff;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.foot_col_2 {
+    width: 230px;
+    max-width: 230px;
+}
+
+.foot_col_2 h5 {
+    font-size: 21px;
+    font-family: var(--font_fa_yese);
+    color: #fefefe;
+    margin-bottom: 15px;
+}
+
+.foot_col_2 p {
+    font-size: 16px;
+    font-family: var(--font_fa_open);
+    color: #fff;
+    font-weight: 700;
+    margin-top: 18px;
+    line-height: 24px;
+}
+
+.foot_col_2 span {
+    font-size: 16px;
+    font-family: var(--font_fa_open);
+    color: #fff;
+    font-weight: 400;
+    display: block;
+}
+
+.foot_col_2 a {
+    color: #fff;
+    margin-right: 5px;
+    margin-top: 55px;
+}
+
+/* ======================================================================================================================
+                                                    footer part end
+==========================================================================================================================*/
+
+
+
+
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
+/* ======================================================================================================================
+                                                    menu part start
+==========================================================================================================================*/
+
+/* ======================================================================================================================
+                                                    menu part end
+==========================================================================================================================*/
